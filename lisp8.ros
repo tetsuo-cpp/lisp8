@@ -7,11 +7,11 @@ exec ros -Q -- $0 "$@"
   (ros:ensure-asdf)
   ;;#+quicklisp(ql:quickload '() :silent t)
   (ql:quickload :sdl2)
-  (load "lisp8.lisp")
+  (asdf:load-system 'lisp8)
   )
 
 (defpackage :ros.script.lisp8.3785420290
-  (:use :cl))
+  (:use :cl :lisp8))
 (in-package :ros.script.lisp8.3785420290)
 
 (defun main (&rest argv)
