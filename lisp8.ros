@@ -16,5 +16,5 @@ exec ros -Q -- $0 "$@"
 
 (defun main (&rest argv)
   (declare (ignorable argv))
-  (lisp8:run-rom "blah"))
+  (lisp8:run-rom "INVADERS"))
 ;;; vim: set ft=lisp lisp:
